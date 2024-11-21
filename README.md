@@ -1,50 +1,50 @@
 Roll:2007034
 
-Wordle iOS Application
+# Wordle iOS Application
 
 This is a simple Wordle game implemented in Swift as part of an iOS assignment. The app replicates the functionality of the popular word game,
 where users attempt to guess a 5-letter word in six attempts. It was developed using Storyboard and Swift, based on a tutorial for beginners.
 
 ![image_alt](https://github.com/nabonisabekunnahar/Wordle/blob/main/image.png?raw=true)
 
-Features
+## Features
 
-Game Board:
+### Game Board:
 
 Displays the current guesses in a grid layout.
 Each row represents a single guess.
 
-Colors indicate feedback:
+### Colors indicate feedback:
 
-Green: Correct letter in the correct position.
+#### Green: Correct letter in the correct position.
 
-Orange: Correct letter in the wrong position.
+#### Orange: Correct letter in the wrong position.
 
-Gray: Incorrect letter.
+#### Gray: Incorrect letter.
 
-On-Screen Keyboard:
+### On-Screen Keyboard:
 
 A virtual keyboard for user input.
 Automatically updates the grid based on user input.
 
-Interactive Gameplay:
+### Interactive Gameplay:
 
 Immediate feedback for each guess.
 
-Code Overview:
+## Code Overview:
 
-1. BoardViewController
+#### BoardViewController
    
 Manages the game board display using a UICollectionView.
 Dynamically updates cell colors based on the user's guesses.
 Implements the BoardViewControllerDatasource protocol to interact with the main game logic.
 
-2.KeyboardViewController
+#### KeyboardViewController
 
 Displays the virtual keyboard using a UICollectionView.
 Sends user input (letters) to the main game controller through the KeyboardViewControllerDelegate protocol.
 
-3.ViewController
+#### ViewController
 
 Main game logic controller.
 Manages the interaction between the board and keyboard.
@@ -53,12 +53,12 @@ Implements:
 KeyboardViewControllerDelegate for handling keyboard inputs.
 BoardViewControllerDatasource for providing data to the game board.
 
-4.KeyCell
+#### KeyCell
 
 Represents individual keys in the keyboard and letters on the board.
 Configures appearance dynamically based on the input or feedback.
 
-This project was created by following a Wordle tutorial designed by Afraz Siddiqui, available on YouTube. 
+##### This project was created by following a Wordle tutorial designed by Afraz Siddiqui, available on YouTube. 
 
 
 
